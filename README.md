@@ -13,3 +13,4 @@ Used Tech,
 <img width="1275" alt="SignIn" src="https://github.com/farheen-dev/ilabs-faq-manager-assignment/assets/55763160/094de960-56d4-4820-b703-44fbf9472b2b">
 
 ## Dashboard
+<img width="1280" alt="Dashboard" src="https://github.com/farheen-dev/ilabs-faq-manager-assignment/assets/55763160/a02fdacc-7855-410a-8cd9-d8fe649aedc7">
