@@ -5,6 +5,9 @@ Used Tech,
 - ReactJS 8
 
 ## Demo 
+https://github.com/farheen-dev/ilabs-faq-manager-assignment/assets/55763160/121eac5f-20c8-4356-93a7-aae5deed3116
+
+
 
 ## SignUp 
 <img width="1280" alt="SignUp" src="https://github.com/farheen-dev/ilabs-faq-manager-assignment/assets/55763160/fb744ce5-bd8f-4536-98a8-9005360c6a1d">
