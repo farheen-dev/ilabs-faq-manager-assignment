@@ -20,6 +20,9 @@ public class User {
     @Column(name="password", length = 255)
     private String password;
 
+    @ManyToOne
+    private Role role;
+
     public User() {
     }
 
@@ -28,6 +31,22 @@ public class User {
         this.username = username;
         this.email = email;
         this.password = password;
+    }
+
+    public User(int userid, String username, String email, String password, Role role) {
+        this.userid = userid;
+        this.username = username;
+        this.email = email;
+        this.password = password;
+        this.role = role;
+    }
+
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
     }
 
     public int getUserid() {
