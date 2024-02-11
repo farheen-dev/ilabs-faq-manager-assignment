@@ -2,7 +2,9 @@ package com.farheen.ilabsfaqmanagerbackend.service.impl;
 
 import com.farheen.ilabsfaqmanagerbackend.dto.LoginDTO;
 import com.farheen.ilabsfaqmanagerbackend.dto.UserDTO;
+import com.farheen.ilabsfaqmanagerbackend.model.Role;
 import com.farheen.ilabsfaqmanagerbackend.model.User;
+import com.farheen.ilabsfaqmanagerbackend.repository.RoleRepo;
 import com.farheen.ilabsfaqmanagerbackend.response.LoginResponse;
 import com.farheen.ilabsfaqmanagerbackend.repository.UserRepo;
 import com.farheen.ilabsfaqmanagerbackend.service.UserService;
@@ -19,15 +21,20 @@ public class UserServiceImpl implements UserService {
     private UserRepo userRepo;
 
     @Autowired
+    private RoleRepo roleRepo;
+
+    @Autowired
     private PasswordEncoder passwordEncoder;
 
     @Override
     public String addUser(UserDTO userDTO) {
+        Role userRole = roleRepo.findByName("ROLE_USER");
         User user = new User(
                 userDTO.getUserid(),
                 userDTO.getUsername(),
                 userDTO.getEmail(),
-                this.passwordEncoder.encode(userDTO.getPassword())
+                this.passwordEncoder.encode(userDTO.getPassword()),
+                userRole
         );
         userRepo.save(user);
         return user.getUsername();

@@ -23,6 +23,14 @@ public class DataInitializer {
                 roleRepository.save(adminRole);
             }
 
+            String userRoleName = "ROLE_USER";
+            Role userRole = roleRepository.findByName(userRoleName);
+            if (userRole == null) {
+                userRole = new Role();
+                userRole.setName(userRoleName);
+                roleRepository.save(userRole);
+            }
+
             String adminUsername = "admin";
             if (!userRepository.existsByUsername(adminUsername)) {
                 User adminUser = new User();
