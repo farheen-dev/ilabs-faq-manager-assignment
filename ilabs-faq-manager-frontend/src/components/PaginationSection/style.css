@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  background-color: #ffffff;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 10px;
+  margin-top: 1%;
+}
+
+.paginationPart {
+  margin-left: auto;
+}

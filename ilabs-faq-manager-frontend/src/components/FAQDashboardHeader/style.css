@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.btn {
+  margin-top: 1%;
+  background-color: #c3c8e6;
+  color: #000000;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background-color: #e6e6f5 !important;
+  color: #000000 !important;
+}
+
+.pluscircle {
+  color: #3c50b4;
+}
+
+.formsection {
+  margin-top: 5%;
+  margin-right: 20%;
+}
