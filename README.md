@@ -2,7 +2,7 @@
 
 Used Tech,
 - Spring Boot 3
-- ReactJS 8
+- ReactJS 18
 
 ## Demo 
 https://github.com/farheen-dev/ilabs-faq-manager-assignment/assets/55763160/121eac5f-20c8-4356-93a7-aae5deed3116
