@@ -2,4 +2,4 @@
 
 Used Tech,
 - Spring Boot 3
-- ReactJs 8
+- ReactJS 8
