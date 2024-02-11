@@ -1,11 +1,22 @@
 package com.farheen.ilabsfaqmanagerbackend.dto;
 
+import com.farheen.ilabsfaqmanagerbackend.model.Role;
+
 public class UserDTO {
 
     private int userid;
     private String username;
     private String email;
     private String password;
+    private Role role;
+
+    public UserDTO(int userid, String username, String email, String password, Role role) {
+        this.userid = userid;
+        this.username = username;
+        this.email = email;
+        this.password = password;
+        this.role = role;
+    }
 
     public UserDTO(int userid, String username, String email, String password) {
         this.userid = userid;
@@ -47,6 +58,14 @@ public class UserDTO {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
     }
 
     @Override
